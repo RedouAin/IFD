@@ -11,4 +11,4 @@ Taske#03_InteractiveInfographic
 <br>
 03.1: <a href="https://github.com/RedouAin/IFD/blob/main/Task%2303_InteractiveInfographic/Grobes%20Konzept_Renewable%20Energy.pdf">Konzept</a>
 <br>
-03.2: <a href="https://github.com/RedouAin/IFD/blob/main/Task%2303_InteractiveInfographic/Interaktive%20Datenvisualisierung%20%2B%20Moodboard.pdf">Moodboard</a>
+03.2: <a href="https://github.com/RedouAin/IFD/blob/main/Task%2303_InteractiveInfographic/Moodboard_Beispiele.pdf">Moodboard</a>
