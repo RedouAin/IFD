@@ -44,5 +44,5 @@ Task#09_VUI_Konzeptenwurf
 <br>
 Task#10_VUI_Prototype
 <br>
-<a href="https://github.com/RedouAin/IFD/blob/main/Task%2310_VUI_Prototype/index.html">Buddy</a>
+<a href="index.html">Buddy</a>
 
