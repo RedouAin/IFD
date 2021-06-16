@@ -1,0 +1,159 @@
+body{
+  background-color: #8EADD6;
+}
+.uberschrift{
+  text-align: center;
+  margin-top: 15px;
+}
+.uberschrift h1{
+  font-size: 30px;
+  text-decoration: underline;
+  color: #FFC07E;
+}
+.sprechen
+{
+  width: auto;
+  /*background-color: red;*/
+  height: 360px;
+  margin-top: 40px;
+}
+.Moi{
+  float: right;
+  /*background-color: green;*/
+  margin-top: 25px;
+  margin-right: 40px;
+}
+#talkbubble {
+    width: 600px;
+    height: 80px;
+    background: #F4FF7D;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 15px 15px 15px 15px;
+    padding-top: 5px;
+  }
+
+  #talkbubble:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #F4FF7D;
+    border-bottom: 13px solid transparent ;
+    transform: scaleX(-1);
+  }
+#output{
+  margin-left: 10px;
+  margin-top: 150px;
+  width: 600px;
+  text-align: center;
+}
+.Buddy{
+  float: left;
+  /*background-color: blue;*/
+  margin-left: 40px;
+  margin-top: 150px;
+}
+#talkbubble2 {
+    width: 600px;
+    height: 140px;
+    background: #F4FF7D;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 15px 15px 15px 15px;
+    padding-top: 10px;
+    padding-left: 7px;
+  }
+
+  #talkbubble2:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #F4FF7D;
+    border-bottom: 13px solid transparent ;
+  }
+#sagen{
+  /
+  margin-left: 25px;
+  margin-top: 1500px;
+  width: 600px;
+}
+/*Button*/
+.btn-primary {
+  color: #ffffff;
+  background-color: #FA9469;
+  border-color: #2D3333;
+  font-size: 90%;
+  letter-spacing: 0.15rem;
+  padding: 1.5rem 2.3rem;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1) !important;
+  border: 0;
+  border-radius: 15px 15px 15px 15px;
+}
+.btn-primary:hover.Buhn.Nase {
+  color: #000000;
+  background-color: #C5C7C7;
+  text-decoration: none;
+  border-color: #C5C7C7;
+}
+.btn.btn-primary.active,.btn.btn-primary:active {
+  border-color: #D2D2D4 !important;
+  background-color: #D2D2D4 !important;
+}
+/*Hinweise*/
+.Rule{
+  margin-left: 123px;
+  margin-top: 10px;
+}
+.Rule h4{
+  font-size: 20px;
+  color: white;
+}
+.Commands{
+  width: auto;
+  /*background-color: black;*/
+  font-size: 80%;
+  letter-spacing: 0.15rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.row{
+  width: 100%;
+}
+.col p{
+  font-size: 15px;
+  /*background-color: green;*/
+}
+
+.links{
+  padding-top: 20px;
+  color: white;
+  /*background-color: red;*/
+}
+.col.links p{
+  width: 650px;
+}
+.col.rechts{
+  width: 100px;
+}
+.col.rechts p{
+  width: 680px;;
+}
+.rechts{
+  padding-top: 20px;
+  color: white;
+  /*background-color: blue;*/
+}
+.container{
+  margin-left: 0px;
+  /*background-color: yellow;*/
+}

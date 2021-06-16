@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Playgroud Artyom</title>
+  <script src="js/libs/artyom.window.min.js"></script>
+  <script src="js/playgroud-artyom-script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+  <div class="uberschrift">
+    <h1>Wie produziert Deutschland seine Energie</h1>
+  </div>
+  <div class="sprechen">
+    <div class="Moi">
+      <div id="talkbubble">
+        <span id="output"> </span>
+      </div>
+    </div>
+    <div class="Buddy">
+      <div id="talkbubble2">
+        <span id="sagen"> </span>
+      </div>
+    </div>
+</div>
+<button id="meinId" type="button">Click Me!</button>
+<div class="Rule">
+      <h4>Beginne deine Frage mit "Hey Buddy"; Frägt Buddy etwas, antworte mit dem Befehl hinter dem Bindestrich.</h4>
+</div>
+  <div class="Commands">
+    <div class="container">
+  <div class="row">
+    <div class="col links">
+      <p>Welche Energiegewinnungsmethoden gibt es alles? - Ja! <br>
+      Welche sind die saubersten Bundesländer? - Sehr gerne! <br>
+      Welche sind die schmutzigsten Bundesländer? - Das möchte ich wissen. <br>
+      Vergleich [Bundesland XY] und [Bundesland YZ]!</p>
+    </div>
+    <div class="col rechts">
+      <p>Welche Bundesländer benutzen noch [Methode XY] zur Energiegewinnung? <br>
+      Mit welchen Methoden gewinnt [Bundesland XY] seine Energie? <br>
+      Welches Bundesland benutzt am meisten/wenigsten [XY Methode]?</p>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
