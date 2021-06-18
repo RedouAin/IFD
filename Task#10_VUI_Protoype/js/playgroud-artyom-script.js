@@ -599,7 +599,7 @@ artyom.addCommands([
       indexes: ["Hey Buddy, vergleiche Bayern und Berlin?", "Vergleiche Berlin und Bayern", "Vergleiche Bayern und Berlin"],
       action: function(i){
           document.getElementById('sagen').innerHTML = "Beide Bundesländer benutzen Solarpanels und Windkraftwerke zur Energiegewinnung. Aus beiden Methoden zieht Berlin mehr Energie, nämlich 100%. Zusätzlich zieht Berlin seine Energie aus Recycling zu 100%, Bayern aus Atomkraftwerken zu 50%. Damit ist Berlin sauberer als Bayern.";
-          artyom.say("Beide Bundesländer benutzen Solarpanels und Windkraftwerke zur Energiegewinnung. Nur aus den Solarüanels zieht Bayern mit 80% mehr Energie als Brandenburg mit 50%. Aus der Windkraft ziehen beide 80%. Zusätzlich zieht Brandenburg seine Energie aus Recycling zu 80%, Bayern aus Atomkraftwerken zu 50%. Damit ist Brandenburg sauberer als Bayern.");
+          artyom.say("Beide Bundesländer benutzen Solarpanels und Windkraftwerke zur Energiegewinnung. Aus beiden Methoden zieht Berlin mehr Energie, nämlich 100%. Zusätzlich zieht Berlin seine Energie aus Recycling zu 100%, Bayern aus Atomkraftwerken zu 50%. Damit ist Berlin sauberer als Bayern.");
       }
   },
   {
