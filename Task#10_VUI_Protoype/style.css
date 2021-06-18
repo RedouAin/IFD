@@ -8,7 +8,7 @@ body{
 .uberschrift h1{
   font-size: 30px;
   text-decoration: underline;
-  color: #FFC07E;
+  color: white;
 }
 .sprechen
 {
@@ -82,6 +82,12 @@ body{
     border-bottom: 13px solid transparent ;
   }
 #sagen{
+  /
+  margin-left: 25px;
+  margin-top: 1500px;
+  width: 600px;
+}
+#sagen2{
   /
   margin-left: 25px;
   margin-top: 1500px;

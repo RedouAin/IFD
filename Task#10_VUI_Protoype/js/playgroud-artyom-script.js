@@ -22,50 +22,64 @@ artyom.addCommands([
         artyom.say("Na klar, was ist dein Anliegen");
     }
 },
-  {
-      indexes: ["Hey Buddy, welche Energiegewinnungsmethoden gibt es alles?","Energie Gewinnungsmethoden", "Energiegewinnung Methoden", "Hey Buddy, welche Energiegewinnungs gibt es?"],
-      action: function(i){
-          document.getElementById('sagen').innerHTML = "Es gibt folgende Energieträger: Windräder, Wasserkraftwerke, Atomkraftwerke, Kohleabbau, Solarpanels, Geothermie, Recyclinganlagen, Biomasse und Ölpumpen. Möchtest du wissen, welche davon fossil und welche erneuerbar sind?";
-          artyom.say("Es gibt folgende Energieträger: Windräder, Wasserkraftwerke, Atomkraftwerke, Kohleabbau, Solarpanels, Geothermie, Recyclinganlagen, Biomasse und Ölpumpen. Möchtest du wissen, welche davon fossil und welche erneuerbar sind?");
-      }
-  },
-  {
-      indexes: ["Ja, möchte ich", "Ja"],
-      action: function(i){
-          document.getElementById('sagen').innerHTML = "Als fossile Energieträger zählen Atomkraftwerke, Ölpumpen und Kohlekraftwerke. Erneuerbare Energien sind Windkraftwerke, Solarpanels, Wasserkraftwerke, die Geothermie, Recycling und Biomasse";
-          artyom.say("Als fossile Energieträger zählen Atomkraftwerke, Ölpumpen und Kohlekraftwerke. Erneuerbare Energien sind Windkraftwerke, Solarpanels, Wasserkraftwerke, die Geothermie, Recycling und Biomasse");
-      }
-  },
+artyom.addCommands([
+    {
+        indexes: ["Hey Buddy, welche Energiegewinnungsmethoden gibt es alles?", "Energie Gewinnungsmethoden", "Energiegewinnung Methoden", "Hey Buddy, welche Energiegewinnungs gibt es?"],
+        action: function (i) {
+            document.getElementById('sagen').innerHTML = "Es gibt folgende Energiemethoden: Wind, Wasser, Atom, Kohle, Solar, Geothermal, Recycling, Biomasse und Öl. Möchtest du wissen, welche davon fossil und welche erneuerbar sind?";
+            artyom.say("Es gibt folgende Energiemethoden: Wind, Wasser, Atom, Kohle, Solar, Geothermal, Recycling, Biomasse und Öl. Möchtest du wissen, welche davon fossil und welche erneuerbar sind?");
+            artyom.addCommands([
+                {
+                    indexes: ["Ja, möchte ich", "Ja"],
+                    action: function (i) {
+                        document.getElementById('sagen').innerHTML = "Als fossile Energien zählen Atomkraftwerke, Ölpumpen und Kohlekraftwerke. Erneuerbare Energien sind Windkraftwerke, Solarpanels, Wasserkraftwerke, die Geothermie, Recycling und Biomasse";
+                        artyom.say("Als fossile Energien zählen Atomkraftwerke, Ölpumpen und Kohlekraftwerke. Erneuerbare Energien sind Windkraftwerke, Solarpanels, Wasserkraftwerke, die Geothermie, Recycling und Biomasse");
+                    }
+                }
+                ]);
+        }
+    },
+]),
   //schmutzigsten
-  {
-      indexes: ["Hey Buddy, welche sind die schmutzigsten Bundesländer?", "schmutzigsten"],
-      action: function(i){
-          document.getElementById('sagen').innerHTML = "Die schmutzigsten Bundesländer sind Sachsen, Niedersachsen, Nordrhein-Westfalen und Rheinland-Pfalz. Willst du wissen warum?";
-          artyom.say("Die schmutzigsten Bundesländer sind Sachsen, Niedersachsen, Nordrhein-Westfalen und Rheinland-Pfalz. Willst du wissen warum?");
-      }
-  },
-  {
-      indexes: ["Das möchte ich wissen", "Wissen"],
-      action: function(i){
-          document.getElementById('sagen').innerHTML = "Das liegt daran, dass diese Bundesländer im Vergleich zu viele konventionelle Methoden der Energiegewinnung nutzen und gleichzeitig zu wenig erneuerbare Energiegewinnungsmethoden wie Windkraft. Eine visuelle Darstellung findest du hier, unter Filter 'Conventional': https://f8lqu3.axshare.com/#id=ysp6dm&p=page_1&sc=2";
-          artyom.say("Das liegt daran, dass diese Bundesländer im Vergleich zu viele konventionelle Methoden der Energiegewinnung nutzen und gleichzeitig zu wenig erneuerbare Energiegewinnungsmethoden wie Windkraft. Eine visuelle Darstellung findest du hier, unter Filter 'Conventional': https://f8lqu3.axshare.com/#id=ysp6dm&p=page_1&sc=2");
-      }
-  },
+  artyom.addCommands([
+      {
+          indexes: ["Hey Buddy, welche sind die schmutzigsten Bundesländer?", "schmutzigsten"],
+          action: function (i) {
+              document.getElementById('sagen').innerHTML = "Die schmutzigsten Bundesländer sind Sachsen, Niedersachsen, Nordrhein-Westfalen und Rheinland-Pfalz. Willst du wissen warum?";
+              artyom.say("Die schmutzigsten Bundesländer sind Sachsen, Niedersachsen, Nordrhein-Westfalen und Rheinland-Pfalz. Willst du wissen warum?");
+              artyom.addCommands([
+                  {
+                      indexes: ["Das möchte ich wissen", "Wissen"],
+                      action: function (i) {
+                          document.getElementById('sagen').innerHTML = "Das liegt daran, dass diese Bundesländer im Vergleich zu viele konventionelle Methoden der Energiegewinnung nutzen und gleichzeitig zu wenig erneuerbare Energiegewinnungsmethoden wie Windkraft. Eine visuelle Darstellung findest du hier, unter Filter 'Conventional':";
+                          document.getElementById('sagen2').innerHTML = "https://f8lqu3.axshare.com/#id=ysp6dm&p=page_1&sc=2";
+                          artyom.say("Das liegt daran, dass diese Bundesländer im Vergleich zu viele konventionelle Methoden der Energiegewinnung nutzen und gleichzeitig zu wenig erneuerbare Energiegewinnungsmethoden wie Windkraft. Eine visuelle Darstellung findest du hier.");
+                      }
+                  }
+                  ]);
+          }
+      },
+  ]),
   //saubersten
-  {
-      indexes: ["Hey Buddy, welche sind die saubersten Bundesländer?", "saubersten"],
-      action: function(i){
-          document.getElementById('sagen').innerHTML = "Die saubersten Bundesländer sind Berlin, Schleswig-Holstein, Brandenburg, Bayern, Baden-Würrtemberg und das Saarland. Willst du wissen warum?";
-          artyom.say("Die saubersten Bundesländer sind Berlin, Schleswig-Holstein, Brandenburg, Bayern, Baden-Würrtemberg und das Saarland. Willst du wissen warum?");
-      }
-  },
-  {
-      indexes: ["Sehr gerne", "sehr"],
-      action: function(i){
-          document.getElementById('sagen').innerHTML = "Das liegt daran das diese Bundesländer zu einem sehr großen Teil erneuerbare Energien benutzen und nur wenige bis garkeine konventionellen bzw. fossilen Brennstoffe. Eine visuelle Darstellung findest du hier, unter Filter 'Sustainable': https://f8lqu3.axshare.com/#id=ysp6dm&p=page_1&sc=2.";
-          artyom.say("Das liegt daran das diese Bundesländer zu einem sehr großen Teil erneuerbare Energien benutzen und nur wenige bis garkeine konventionellen bzw. fossilen Brennstoffe. Eine visuelle Darstellung findest du hier, unter Filter 'Sustainable': https://f8lqu3.axshare.com/#id=ysp6dm&p=page_1&sc=2.");
-      }
-  },
+  artyom.addCommands([
+      {
+          indexes: ["Hey Buddy, welche sind die saubersten Bundesländer?", "saubersten"],
+          action: function (i) {
+              document.getElementById('sagen').innerHTML = "Die saubersten Bundesländer sind Berlin, Schleswig-Holstein, Brandenburg, Bayern, Baden-Würrtemberg und das Saarland. Willst du wissen warum?";
+              artyom.say("Die saubersten Bundesländer sind Berlin, Schleswig-Holstein, Brandenburg, Bayern, Baden-Würrtemberg und das Saarland. Willst du wissen warum?");
+              artyom.addCommands([
+                  {
+                      indexes: ["Sehr gerne", "sehr"],
+                      action: function (i) {
+                          document.getElementById('sagen').innerHTML = "Das liegt daran das diese Bundesländer zu einem sehr großen Teil erneuerbare Energien benutzen und nur wenige bis garkeine konventionellen beziehungsweise fossilen Brennstoffe. Eine visuelle Darstellung findest du hier, unter Filter 'Sustainable':";
+                          document.getElementById('sagen2').innerHTML = "https://f8lqu3.axshare.com/#id=ysp6dm&p=page_1&sc=2";
+                          artyom.say("Das liegt daran das diese Bundesländer zu einem sehr großen Teil erneuerbare Energien benutzen und nur wenige bis garkeine konventionellen beziehungsweise fossilen Brennstoffe. Eine visuelle Darstellung findest du hier.");
+                      }
+                  }
+                  ]);
+          }
+      },
+  ]),
   //Bundesländer Methoden
   {
       indexes: ["Hey Buddy, mit welchen Methoden gewinnt Bayern seine Energie?", "mit welchen Methoden gewinnt Bayern"],
