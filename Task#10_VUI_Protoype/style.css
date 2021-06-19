@@ -33,7 +33,13 @@ body{
     border-radius: 15px 15px 15px 15px;
     padding-top: 5px;
   }
-
+.Animationvorher{
+  transition: all 0.5s ease;
+  transform: scale(0.3);
+}
+.Animationvorher.nacher{
+  transform: scale(1);
+}
   #talkbubble:before {
     content: "";
     position: absolute;
