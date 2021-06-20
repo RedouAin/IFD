@@ -33,11 +33,18 @@ body{
     border-radius: 15px 15px 15px 15px;
     padding-top: 5px;
   }
-.Animationvorher{
-  transition: all 0.5s ease;
-  transform: scale(0.3);
+  .animationvorher{
+  transform: scale(0);
+  transition: all 0.1s ease;
+  }
+  .animationvorher.nacher{
+  transform: scale(1);
 }
-.Animationvorher.nacher{
+  .animationvorher2{
+    transform: scale(0);
+    transition: all 0.1s ease;
+  }
+  .animationvorher2.nacher2{
   transform: scale(1);
 }
   #talkbubble:before {
@@ -66,7 +73,7 @@ body{
 }
 #talkbubble2 {
     width: 600px;
-    height: 140px;
+    height: 165px;
     background: #F4FF7D;
     position: relative;
     -moz-border-radius: 10px;
